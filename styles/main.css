@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 	font-family: 'Roboto Mono', monospace;
@@ -18,7 +17,7 @@ header {
 	border-left: 1px solid #2db54d9c;
 	border-right: 1px solid #2db54d9c;
 	border-radius: 5px;
-	width: 50%;
+	width: 65%;
 	margin: auto;
 	
 }
@@ -36,8 +35,14 @@ table {
 	border-spacing: 20px 20px;
 }
 
+@media screen and (max-width: 600px) {
+	table {
+		border-spacing: 0px 20px;
+	}
+}
+
 .description {
-	padding: 0.7rem 1rem;
+	padding: 7px 7px;
 	border-right: 1px solid;
 	text-align: center;
 }
@@ -45,25 +50,36 @@ table {
 .content {
 	width: 100%;
 	text-align: center;
+	padding-left: 20px;
 }
 
-.container {
-	display: flex;
-	justify-content: center;
-	/* flex-wrap: wrap; */
-}
-
-.container * {
-	margin: 10px;
-	width: 44%;
-	/* width: 700px; */
-}
-
-.container img {
+img {
 	border: 5px solid#2db54c;
 	border-radius: 5px;
 }
 
-.container p {
+.rows {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.rows p {
 	text-align: center;
+}
+
+.rows * {
+	margin: 10px;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	min-width: 350px;
+}
+
+.columns img {
+	width: 100%;
+	margin: auto;
 }
