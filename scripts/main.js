@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	var width = $(window).width();
-	var width = $(window).height();
+	var height = $(window).height();
 	width /= 13;
 	
 	$(".content").css("padding-right", width.toString() + "px");
